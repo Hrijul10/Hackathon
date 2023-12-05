@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+    <header>
+        <h1>Hotel Booking</h1>
+    </header>
+
+    <nav>
+
+            <span><a href="#home">Home</a></span>
+            <span><a href="#rooms">Rooms</a></span>
+            <span><a href="#booking">Booking</a></span>
+            <span><a href="#contact">Contact</a></span>
+
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Our Hotel</h2>
+        <img src="hotel.jpg">
+        <br>
+        <b>Discover comfortable and affordable accommodations for your stay.</b>
+    </section>
+
+    <section id="rooms">
+        <h2>Rooms</h2>
+        <div class="room">
+            <h3>Single Room</h3>
+            <img src="single.jpg">
+            <p>Starting from ₹1000/night</p>
+        </div>
+        <div class="room">
+            <h3>Double Room</h3>
+            <img src="double.jpg">
+            <p>Starting from ₹2500/night</p>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Booking</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="check-in">Check-in Date:</label>
+            <input type="date" id="check-in" name="check-in" required>
+
+            <label for="check-out">Check-out Date:</label>
+            <input type="date" id="check-out" name="check-out" required>
+
+            <label for="room-type">Room Type:</label>
+            <select id="room-type" name="room-type">
+                <option value="single">Single Room</option>
+                <option value="double">Double Room</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to contact us.</p>
+        <p>Email: contact@hotelbooking.com</p>
+    </section>
+
+</body>
+</html>
